@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+
+        header {
+            background-color: black;
+            color: white;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 60px;
+            font-size: 16px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: red;
+        }
+
+        h1,
+        h2 {
+            color: black;
+            align-items: center;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            height: 200px;
+            display: flex;
+            flex-direction: line;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            display: inline-block;
+            margin: 0 30px;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: darkred;
+        }
+
+        .title h1 {
+            font-size: 108px;
+        }
+
+        .title img {
+            width: 652px;
+            margin-top: 9px;
+            margin-bottom: 10px;
+            margin-left: 75px;
+        }
+
+        .title p {
+            font-size: 20px;
+        }
+
+        .title-h1 {
+            font-size: 108px;
+            margin: 0;
+            align-items: center;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .image-container img {
+            width: calc(50%);
+        }
+
+        .image-container img:nth-child(1) {
+            height: 800px;
+        }
+
+        .image-container img:nth-child(3) {
+            margin-top: -320px;
+            margin-left: 0;
+            height: 1000px;
+        }
+
+        .image-container img:nth-child(4) {
+            height: 680px;
+        }
+
+        .runline1 {
+            background-color: black;
+            height: 20px;
+        }
+
+        .runline2 {
+            background-color: darkred;
+            height: 20px;
+        }
+
+        .runline3 {
+            background-color: darkred;
+            height: 20px;
+            margin-bottom: -80px;
+            margin-top: 60px;
+        }
+
+        .runline4 {
+            background-color: darkred;
+            height: 20px;
+            margin-top: -104px;
+        }
+
+        dl {
+            line-height: 0.1;
+        }
+
+        .expirience p {
+            font-size: 52px;
+        }
+
+        .expirience dd {
+            font-size: 20px;
+        }
+
+        .expirience {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        video {
+            width: 800px;
+            height: 1000px;
+            margin: 0;
+            margin-top: -20px;
+        }
+
+        .measuring {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .data-container {
+            display: flex;
+            color: darkred;
+            font-size: 26px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+            margin-top: -300px;
+        }
+
+        table {
+            border: 2px solid darkred;
+            border-collapse: collapse;
+            color: darkred;
+            width: 40%;
+            margin-bottom: 50px;
+            margin-top: -800px;
+            margin-left: 800px;
+        }
+
+        .table {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        th,
+        td {
+            border: 2px solid darkred;
+            padding: 8px;
+            color: darkred;
+            font-size: 16px;
+        }
+
+        a {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border: 1px solid darkred;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: darkred;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+
+        .form-container button:hover {
+            background-color: #b71c1c;
+        }
+
+        .form-container p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .text1 {
+            font-size: 28px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .text2 {
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: darkred;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about-me">Про мене</a></li>
+                <li><a href="#experience">Досвід</a></li>
+                <li><a href="#contacts">Співпраця</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me">
+            <div class="title">
+                <img src="image/title.png">
+                <div class="title-h1">
+                    <h1>Кім <br>У <br>Джу</h1>
+                </div>
+                <p><strong>своїй модельній кар'єрі я дбайливо працювала<br>над кожним проєктом,намагаючись втілити
+                        в<br>життя кожен образ.
+                        Моя впевненість і енергія <br>допомагають мені крокувати вперед та вибиватися <br>серед
+                        конкуренції.</strong></p>
+            </div>
+            <div class="runline1"></div>
+            <div class="image-container">
+                <img src="image/reviews3.jpeg">
+                <img src="image/reviews1.jpeg">
+                <img src="image/reviews4.jpeg">
+                <img src="image/interview.png">
+            </div>
+            <div class="runline2"></div>
+        </section>
+        <section id="experience">
+            <div class="expirience">
+                <dl>
+                    <dt class="first-dt">
+                        <p><strong>Досвід -</strong></p>
+                    </dt>
+                    <dd class="first-dd">робота на подіумі, фотосесіях та рекламних кампаніях.</dd>
+                    <dt class="second-dt">
+                        <p><strong>Портфоліо -</strong></p>
+                    </dt>
+                    <dd class="second-dd">показує мої найкращі роботи у світі моди та стилю.</dd>
+                    <dt class="third-dt">
+                        <p><strong>Досягнення -</strong></p>
+                    </dt>
+                    <dd class="third-dd">отримання нагород та відзнак у модельній індустрії.</dd>
+                </dl>
+            </div>
+            <div class="runline3"></div>
+            <div class="measuring">
+                <div class="video-container">
+                    <video autoplay loop muted>
+                        <source src="image/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="data-container">
+                    <p>Зріст➡ 178</p>
+                    <p>Вага➡ 62</p>
+                    <p>Бюст➡ 90</p>
+                    <p>Талія➡ 62</p>
+                    <p>Бедра➡ 92</p>
+                    <p>Очі➡ карі</p>
+                    <p>Волосся➡ шоколадне</p>
+                </div>
+            </div>
+            <div class="table">
+                <table border="1">
+                    <tr>
+                        <th>Роботи</th>
+                        <td>
+                            <ol>
+                                <li><a href="https://vogue.sg">Фотосесії для Vogue</a></li>
+                                <li>Покази на тижнях моди:
+                                    <ul>
+                                        <li>Нью-Йорк</li>
+                                        <li>Мілан</li>
+                                        <li>Париж</li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://www.chanel.com/fr/">Рекламні кампанії для Chanel</a></li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Досягнення</th>
+                        <td>
+                            <ul>
+                                <li>Номінація на Fashion Awards</li>
+                                <li>Виступи на світових подіумах</li>
+                                <li>Зйомки у виданнях Elle та Harper's Bazaar</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <div class="runline4"></div>
+            <div class="text1">
+                <h1>Співпраця</h1>
+            </div>
+            <div class="form-container">
+                <form name="forma1">
+                    <p>Введіть свій email для зворотнього зв'язку:</p>
+                    <input type="email" name="email" maxlength="50" placeholder="Введіть email">
+                    <button class="send" type="submit">Надіслати</button>
+                </form>
+            </div>
+            <div class="text2">
+                <p>Або ж надішліть нам свою пропозицію, заповнивши форму:</p>
+            </div>
+            <div class="form-container">
+                <form name="forma2">
+                    <p>Введіть Ваше ПІБ:</p>
+                    <input type="text" name="pib" maxlength="50" placeholder="Введіть ПІБ">
+                    <p>Введіть назву Вашої компанії:</p>
+                    <input type="text" name="namecompany" maxlength="50" placeholder="Введіть назву компанії">
+                    <p>Довготривалість пропозиції або контракту:</p>
+                    <select name="language">
+                        <option selected value="oneday">одноразова</option>
+                        <option value="onemonth">1 місяць</option>
+                        <option value="threemonth">3 місяці</option>
+                        <option value="more">більше ніж 3 місяці</option>
+                    </select><br><br>
+                    <p>Вид роботи:</p>
+                    <input type="checkbox" name="var1" value="personalphoto" checked> персональна зйомка
+                    <input type="checkbox" name="var2" value="comercionphoto"> комерційна зйомка
+                    <input type="checkbox" name="var3" value="fashionshow"> показ мод<br><br>
+                    <p>Вкажіть ким ви працюєте в компанії:</p>
+                    <input type="radio" name="admin" value="admin" checked>Адміністратор
+                    <input type="radio" name="director" value="director">Директор<br><br>
+                    <button class="send" type="submit">Надіслати</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Адреса: вул. Модельна, 1, Модельне місто</p>
+        <p>Телефон: +1234567890</p>
+        <p>Email: kim@example.com</p>
+    </footer>
+</body>
+
+</html>
