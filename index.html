@@ -5,284 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: black;
-            background-color: white;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
-
-
-        header {
-            background-color: black;
-            color: white;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 60px;
-            font-size: 16px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: red;
-        }
-
-        h1,
-        h2 {
-            color: black;
-            align-items: center;
-        }
-
-        footer {
-            background-color: black;
-            color: white;
-            height: 200px;
-            display: flex;
-            flex-direction: line;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 5px 0;
-            display: inline-block;
-            margin: 0 30px;
-        }
-
-        .title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: darkred;
-        }
-
-        .title h1 {
-            font-size: 108px;
-        }
-
-        .title img {
-            width: 652px;
-            margin-top: 9px;
-            margin-bottom: 10px;
-            margin-left: 75px;
-        }
-
-        .title p {
-            font-size: 20px;
-        }
-
-        .title-h1 {
-            font-size: 108px;
-            margin: 0;
-            align-items: center;
-        }
-
-        .image-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .image-container img {
-            width: calc(50%);
-        }
-
-        .image-container img:nth-child(1) {
-            height: 800px;
-        }
-
-        .image-container img:nth-child(3) {
-            margin-top: -320px;
-            margin-left: 0;
-            height: 1000px;
-        }
-
-        .image-container img:nth-child(4) {
-            height: 680px;
-        }
-
-        .runline1 {
-            background-color: black;
-            height: 20px;
-        }
-
-        .runline2 {
-            background-color: darkred;
-            height: 20px;
-        }
-
-        .runline3 {
-            background-color: darkred;
-            height: 20px;
-            margin-bottom: -80px;
-            margin-top: 60px;
-        }
-
-        .runline4 {
-            background-color: darkred;
-            height: 20px;
-            margin-top: -104px;
-        }
-
-        dl {
-            line-height: 0.1;
-        }
-
-        .expirience p {
-            font-size: 52px;
-        }
-
-        .expirience dd {
-            font-size: 20px;
-        }
-
-        .expirience {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        video {
-            width: 800px;
-            height: 1000px;
-            margin: 0;
-            margin-top: -20px;
-        }
-
-        .measuring {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .data-container {
-            display: flex;
-            color: darkred;
-            font-size: 26px;
-            align-items: center;
-            justify-content: center;
-            margin-left: 50px;
-            margin-top: -300px;
-        }
-
-        table {
-            border: 2px solid darkred;
-            border-collapse: collapse;
-            color: darkred;
-            width: 40%;
-            margin-bottom: 50px;
-            margin-top: -800px;
-            margin-left: 800px;
-        }
-
-        .table {
-            align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-
-        th,
-        td {
-            border: 2px solid darkred;
-            padding: 8px;
-            color: darkred;
-            font-size: 16px;
-        }
-
-        a {
-            color: red;
-            text-decoration: underline;
-        }
-
-        .form-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 600px;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            border: 1px solid darkred;
-        }
-
-        .form-container input[type="text"],
-        .form-container input[type="email"],
-        .form-container select {
-            width: calc(100% - 20px);
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .form-container button {
-            background-color: darkred;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-
-        }
-
-        .form-container button:hover {
-            background-color: #b71c1c;
-        }
-
-        .form-container p {
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-
-        .text1 {
-            font-size: 28px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-
-        .text2 {
-            font-size: 20px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            color: darkred;
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#about-me">Про мене</a></li>
-                <li><a href="#experience">Досвід</a></li>
-                <li><a href="#contacts">Співпраця</a></li>
+            <ul class="menu">
+                <li class="links_menu"><a href="#about-me" class="links_menu">Про мене</a></li>
+                <li class="links_menu"><a href="#experience" class="links_menu">Досвід</a></li>
+                <li class="links_menu"><a href="#contacts" class="links_menu">Співпраця</a></li>
             </ul>
+            <div class="mobile-menu">
+                <button id="menu-toggle">&#9776; Меню</button>
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu_links"><a href="#about-me" class="mobile-menu_links">Про мене</a></li>
+                    <li class="mobile-menu_links"><a href="#experience" class="mobile-menu_links">Досвід</a></li>
+                    <li class="mobile-menu_links"><a href="#contacts" class="mobile-menu_links">Співпраця</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -297,14 +38,20 @@
                         Моя впевненість і енергія <br>допомагають мені крокувати вперед та вибиватися <br>серед
                         конкуренції.</strong></p>
             </div>
-            <div class="runline1"></div>
-            <div class="image-container">
-                <img src="image/reviews3.jpeg">
-                <img src="image/reviews1.jpeg">
-                <img src="image/reviews4.jpeg">
-                <img src="image/interview.png">
+            <div class="runline1">
+                <span>Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
+                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу </span>
             </div>
-            <div class="runline2"></div>
+            <div class="image-container">
+                <img class="animate-image" src="image/reviews3.jpeg">
+                <img class="animate-image" src="image/reviews1.jpeg">
+                <img class="animate-image" src="image/reviews4.jpeg">
+                <img class="animate-image" src="image/interview.png">
+            </div>
+            <div class="runline2">
+                <span>Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
+                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу </span>
+            </div>
         </section>
         <section id="experience">
             <div class="expirience">
@@ -323,7 +70,10 @@
                     <dd class="third-dd">отримання нагород та відзнак у модельній індустрії.</dd>
                 </dl>
             </div>
-            <div class="runline3"></div>
+            <div class="runline3">
+                <span>Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
+                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу </span>
+            </div>
             <div class="measuring">
                 <div class="video-container">
                     <video autoplay loop muted>
@@ -331,17 +81,17 @@
                     </video>
                 </div>
                 <div class="data-container">
-                    <p>Зріст➡ 178</p>
-                    <p>Вага➡ 62</p>
-                    <p>Бюст➡ 90</p>
-                    <p>Талія➡ 62</p>
-                    <p>Бедра➡ 92</p>
-                    <p>Очі➡ карі</p>
-                    <p>Волосся➡ шоколадне</p>
+                    <p class="data-container_el">Зріст➡ 178</p>
+                    <p class="data-container_el">Вага➡ 62</p>
+                    <p class="data-container_el">Бюст➡ 90</p>
+                    <p class="data-container_el">Талія➡ 62</p>
+                    <p class="data-container_el">Бедра➡ 92</p>
+                    <p class="data-container_el">Очі➡ карі</p>
+                    <p class="data-container_el">Волосся➡ шоколадне</p>
                 </div>
             </div>
             <div class="table">
-                <table border="1">
+                <table border="1" class="table_main">
                     <tr>
                         <th>Роботи</th>
                         <td>
@@ -373,7 +123,10 @@
             </div>
         </section>
         <section id="contacts">
-            <div class="runline4"></div>
+            <div class="runline4">
+                <span>Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
+                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу </span>
+            </div>
             <div class="text1">
                 <h1>Співпраця</h1>
             </div>
@@ -381,7 +134,7 @@
                 <form name="forma1">
                     <p>Введіть свій email для зворотнього зв'язку:</p>
                     <input type="email" name="email" maxlength="50" placeholder="Введіть email">
-                    <button class="send" type="submit">Надіслати</button>
+                    <button class="send" type="reset">Надіслати</button>
                 </form>
             </div>
             <div class="text2">
@@ -407,16 +160,62 @@
                     <p>Вкажіть ким ви працюєте в компанії:</p>
                     <input type="radio" name="admin" value="admin" checked>Адміністратор
                     <input type="radio" name="director" value="director">Директор<br><br>
-                    <button class="send" type="submit">Надіслати</button>
+                    <button class="send" type="reset">Надіслати</button>
                 </form>
             </div>
         </section>
     </main>
     <footer>
-        <p>Адреса: вул. Модельна, 1, Модельне місто</p>
-        <p>Телефон: +1234567890</p>
-        <p>Email: kim@example.com</p>
+        <p>Адреса: м.Львів, вул. Модельна, 1</p>
+        <p>Телефон: +380937809544</p>
+        <p>Email: kim.y.ju@work.com</p>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var experience = document.querySelector('.expirience');
+
+        function isInViewport(element) {
+            var rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function handleScroll() {
+            if (isInViewport(experience) && !experience.classList.contains('animate')) {
+                experience.classList.add('animate');
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Перевірити під час завантаження
+    });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('form1');
+    var emailInput = document.getElementById('email');
+
+    var sendButton = document.querySelector('.send');
+
+    sendButton.addEventListener('click', function(event) {
+        // Очищаємо поля введення
+        emailInput.value = '';
+
+        // Ваш код для подальшої обробки події, наприклад, відправка даних на сервер
+        // Тут можна додати логіку для надсилання форми або інші дії після натискання кнопки
+    });
+});
+$(document).ready(function() {
+    $('#menu-toggle').click(function() {
+        $('.mobile-menu-list').toggle(); /* Перемикаємо відображення списку мобільного меню */
+    });
+});
+
+</script>
 
 </html>
