@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -40,7 +43,8 @@
             </div>
             <div class="runline1">
                 <span>Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
-                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу </span>
+                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
+                    Джу </span>
             </div>
             <div class="image-container">
                 <img class="animate-image" src="image/reviews3.jpeg">
@@ -50,7 +54,8 @@
             </div>
             <div class="runline2">
                 <span>Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
-                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу </span>
+                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
+                    Джу </span>
             </div>
         </section>
         <section id="experience">
@@ -72,7 +77,8 @@
             </div>
             <div class="runline3">
                 <span>Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
-                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу </span>
+                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
+                    Джу </span>
             </div>
             <div class="measuring">
                 <div class="video-container">
@@ -125,27 +131,23 @@
         <section id="contacts">
             <div class="runline4">
                 <span>Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
-                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу </span>
+                    Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У Джу Кім У
+                    Джу </span>
             </div>
             <div class="text1">
                 <h1>Співпраця</h1>
             </div>
-            <div class="form-container">
-                <form name="forma1">
-                    <p>Введіть свій email для зворотнього зв'язку:</p>
-                    <input type="email" name="email" maxlength="50" placeholder="Введіть email">
-                    <button class="send" type="reset">Надіслати</button>
-                </form>
-            </div>
             <div class="text2">
-                <p>Або ж надішліть нам свою пропозицію, заповнивши форму:</p>
+                <p>Надішліть нам свою пропозицію, заповнивши форму:</p>
             </div>
             <div class="form-container">
                 <form name="forma2">
-                    <p>Введіть Ваше ПІБ:</p>
+                    <label for="pib">Введіть Ваше ПІБ: </label>
                     <input type="text" name="pib" maxlength="50" placeholder="Введіть ПІБ">
                     <p>Введіть назву Вашої компанії:</p>
                     <input type="text" name="namecompany" maxlength="50" placeholder="Введіть назву компанії">
+                    <p>Введіть свій email для зворотнього зв'язку:</p>
+                    <input type="email" name="email" maxlength="50" placeholder="Введіть email">
                     <p>Довготривалість пропозиції або контракту:</p>
                     <select name="language">
                         <option selected value="oneday">одноразова</option>
@@ -160,7 +162,51 @@
                     <p>Вкажіть ким ви працюєте в компанії:</p>
                     <input type="radio" name="admin" value="admin" checked>Адміністратор
                     <input type="radio" name="director" value="director">Директор<br><br>
+                    <label for="interviewTime">Виберіть зручний час для проходження співбесіди:</label><br>
+                    <input type="datetime-local" id="interviewTime" name="interviewTime"><br>
+                    <label for="averageGrade">Якщо Ви модель, то вкажіть зріст:</label><br>
+                    <input type="number" id="averageGrade" name="averageGrade" min="170" max="190"><br>
+                    <p>Вкажіть свій номер телефону:</p>
+                    <input type="tel" name="tel"><br>
+                    <input type="reset">
                     <button class="send" type="reset">Надіслати</button>
+                </form>
+            </div>
+                
+                <h2>Опитування</h2>
+
+                <form id="surveyForm" name="forma3">
+                    <label for="practice">Чи був у вас досвід у моделінгу?</label>
+                    <select id="practice" name="practice">
+                        <option value="yes">Так</option>
+                        <option value="no">Ні</option>
+                    </select>
+
+                    <label>Виберіть потік на якому ви навчаєтесь:</label><br>
+                    <input type="radio" id="stream1" name="stream" value="stream1">
+                    <label for="stream1">Потік 1</label><br>
+                    <input type="radio" id="stream2" name="stream" value="stream2">
+                    <label for="stream2">Потік 2</label><br>
+                    <input type="radio" id="stream3" name="stream" value="stream3">
+                    <label for="stream3">Потік 3</label><br>
+
+                    <label>Вкажіть групу:</label><br>
+                    <input type="checkbox" id="groupA" name="group[]" value="A">
+                    <label for="groupA">Група A</label><br>
+                    <input type="checkbox" id="groupB" name="group[]" value="B">
+                    <label for="groupB">Група B</label><br>
+                    <input type="checkbox" id="groupC" name="group[]" value="C">
+                    <label for="groupC">Група C</label><br>
+
+                    <label for="interviewTime">Виберіть зручний час для проходження співбесіди:</label><br>
+                    <input type="datetime-local" id="interviewTime" name="interviewTime"><br>
+
+                    <label for="averageGrade">Вкажіть середній бал:</label><br>
+                    <input type="number" id="averageGrade" name="averageGrade" min="0" max="100"><br>
+
+                    <!-- Додайте ще питання тут за необхідністю -->
+
+                    <button type="submit">Відправити</button>
                 </form>
             </div>
         </section>
@@ -169,6 +215,7 @@
         <p>Адреса: м.Львів, вул. Модельна, 1</p>
         <p>Телефон: +380937809544</p>
         <p>Email: kim.y.ju@work.com</p>
+        <p>&copy; <span id="currentYear"></span> All rights reserved&reg;</p>
     </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -193,28 +240,24 @@
         }
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Перевірити під час завантаження
+        handleScroll();
     });
-    
-    document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('form1');
-    var emailInput = document.getElementById('email');
 
-    var sendButton = document.querySelector('.send');
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.getElementById('form1');
+        var emailInput = document.getElementById('email');
 
-    sendButton.addEventListener('click', function(event) {
-        // Очищаємо поля введення
-        emailInput.value = '';
+        var sendButton = document.querySelector('.send');
 
-        // Ваш код для подальшої обробки події, наприклад, відправка даних на сервер
-        // Тут можна додати логіку для надсилання форми або інші дії після натискання кнопки
+        sendButton.addEventListener('click', function (event) {
+            emailInput.value = '';
+        });
     });
-});
-$(document).ready(function() {
-    $('#menu-toggle').click(function() {
-        $('.mobile-menu-list').toggle(); /* Перемикаємо відображення списку мобільного меню */
+    $(document).ready(function () {
+        $('#menu-toggle').click(function () {
+            $('.mobile-menu-list').toggle();
+        });
     });
-});
 
 </script>
 
